@@ -1,0 +1,41 @@
+composer:
+  last: Caldara
+  first: Antonio
+title: Laudate pueri
+genre: psalm
+scoring: S, (solo), S, A, T, B (coro), 2 vl, b, org
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: D-Dl
+    shelfmark: Mus.2170-E-3
+    date: 1725–1733
+    rism: 212006725
+    url: https://digital.slub-dresden.de/id426604865
+    license: public domain
+    principal: true
+    notes: full score
+  B2:
+    siglum: D-Dl
+    shelfmark: Mus.2170-E-3a
+    date: 1730–1739
+    rism: 212006726
+    url: https://digital.slub-dresden.de/id426605861
+    license: public domain
+    notes: contains the following parts
+      (pages in digital version are indicated):\\
+      2 × vl 1 (25–31, 33–39)\\
+      2 × vl 2 (41–16, 49–55)\\
+      1 × S (5–7 ripieno)\\
+      2 × A (9–11, 13–15)\\
+      1 × T (17–19)\\
+      1 × B (21–23)\\
+      1 × vlc (57–61)\\
+      1 × vlne (61–64)\\
+      1 × fag (69–71)\\
+      1 × continuo (65–68)
+imslp: Laudate_pueri_in_C_minor_(Caldara%2C_Antonio)
+extra_abbr:
+  fag:
+  vlc:
+  vlne:
