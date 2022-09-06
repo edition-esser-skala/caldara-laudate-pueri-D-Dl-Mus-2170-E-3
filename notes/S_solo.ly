@@ -86,10 +86,98 @@ LaudateSopranoSoloLyrics = \lyricmode {
   lum. %48 finis
 }
 
+ExcelsusSopranoSolo = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/4 \autoBeamOff \tempoExcelsus
+    \partial 8 d'8\pE g[ f16 es] d[ es c d] b8.[\trill a16] g[ b a c]
+    b[ a g a] b[ d c es] d8.[\trill c16] b[ d c es]
+    d[ c b c] d[ fis e g] fis8.[\trillE e16] d[ fis e g]
+    fis[ e d e] fis[ d e fis] g4 g,
+    R1*8 %12
+    r2 r4 r8 d'
+    d b16([ a)] g8 es' es4 d
+    c8 d16([ es)] d8 c b8. a16 g4 %15
+    R1
+    r2 r4 r8 d'
+    d es!16([ f!)] g8 f es8.[ d16] c[ d es f]
+    g8[ f16 es] d[ es f g] es8.[ d16] c4
+    f8[ es16 f] c[ d es f] d8.[ c16] b[ c d es] %20
+    c4~ c16[ b c d] c[ d b c] a[ b c d]
+    b4~ b16[ a b c] b[ c a b] g[ a b c]
+    a4 r16 a[ b c] d[ a b c] d[ a b c]
+    b4 r16 b[ c d] es[ b c d] es[ c d es]
+    f1~ %25
+    f~
+    f~
+    f16[ g f g] f[ es d c] b4 b8 es
+    d16([ es f g] c,4) b2
+    R1*4 %33
+    r2 r4 r8 d
+    d d d d d16[ c d es] d[ c d es] %35
+    d[ c b a] g[ a b c] d[ c d es] d[ e fis g]
+    a4 d, r2
+    r4 d16[ e fis d] g[ f es d] g[ f es d]
+    es4~ es16[ f g f] es[ d c d] es[ c d es]
+    f[ es d c] f[ es d c] d4~ d16[ es f es] %40
+    d[ c b c] d[ b c d] es[ d c b] es[ d c b]
+    c4~ c16[ d es d] c[ b a b] c[ a b c]
+    d[ c b a] d[ c b a] b4~ b16[ c d b]
+    es[ d c b] c[ b a g] fis'8. e?16 d4
+    g8[ f16 es] d[ es c d] b4 a %45
+    g r r2
+    R1
+    r8 d' a d b g16([ a)] b([ c)] d e
+    fis8([ g16 fis]) g8 g, a2^\markup \remarkE "ad libitum"
+    g r %50
+    R1*7 %57
+    R1\fermata \bar "|." %58 finis
+  }
+}
+
+ExcelsusSopranoSoloLyrics = \lyricmode {
+  Ex -- cel -- _ _ _
+  _ _ _ _
+  _ _ _ _
+  _ _ _ sus,
+
+  ex -- %13
+  cel -- sus su -- per o -- mnes,
+  o -- mnes gen -- tes Do -- mi -- nus, %15
+
+  et
+  su -- per, su -- per coe -- _
+  _ _ _ los
+  glo -- _ _ _ %20
+  _ _ _
+  _ _ _
+  _ _ _ _
+  _ _ _ _
+  _ %25
+
+  _ _ ri -- a %28
+  e -- ius,
+
+  et %34
+  su -- per, su -- per coe -- _ %35
+  _ _ _ _
+  _ los
+  glo -- _ _
+  _ _ _
+  _ _ _ %40
+  _ _ _ _
+  _ _ _
+  _ _ _
+  _ _ _ ri -- a
+  e -- _ _ _ %45
+  ius,
+
+  et su -- per coe -- los glo -- ri -- a,
+  glo -- ri -- a e --
+  ius. %50 finis
+}
 
 
-% Ex -- cel -- sus su -- per o -- mnes gen -- tes Do -- mi -- nus,
-% su -- per coe -- los glo -- ri -- a e -- ius.
 % Quis si -- cut Do -- mi -- nus De -- us no -- ster, qui in al -- tis ha -- bi -- tat,
 % et hu -- mi -- li -- a re -- spi -- cit in coe -- lo et in ter -- ra?
 % Su -- sci -- tans a ter -- ra in -- o -- pem,

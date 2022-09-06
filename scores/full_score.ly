@@ -80,69 +80,106 @@
   %     \midi { \tempo 4 = 100 }
   %   }
   % }
+  % \bookpart {
+  %   \section "2" "A solis ortu"
+  %   \addTocEntry
+  %   \paper {
+  %     top-system-spacing.basic-distance = #10
+  %     top-system-spacing.minimum-distance = #10
+  %     top-markup-spacing.basic-distance = #0
+  %     top-markup-spacing.minimum-distance = #0
+  %     markup-system-spacing.basic-distance = #10
+  %     markup-system-spacing.minimum-distance = #10
+  %     systems-per-page = #2
+  %   }
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \AsolisViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \AsolisViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \AsolisSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \AsolisSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \AsolisAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \AsolisAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \AsolisTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \AsolisTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \AsolisBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \AsolisBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \AsolisOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \AsolisBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2 = 70 }
+  %   }
+  % }
   \bookpart {
-    \section "2" "A solis ortu"
+    \section "3" "Excelsus super omnes"
     \addTocEntry
     \paper {
-      top-system-spacing.basic-distance = #10
-      top-system-spacing.minimum-distance = #10
-      top-markup-spacing.basic-distance = #0
-      top-markup-spacing.minimum-distance = #0
-      markup-system-spacing.basic-distance = #10
-      markup-system-spacing.minimum-distance = #10
-      systems-per-page = #2
+      system-system-spacing.basic-distance = #20
+      system-system-spacing.minimum-distance = #20
+      systems-per-page = #4
+      page-count = #4
     }
     \score {
       <<
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "vl"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \AsolisViolinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \AsolisViolinoII
-            }
-          >>
+        \new StaffGroup \with { \smallGroupDistance } <<
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
+            \ExcelsusViolinoIeII
+          }
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \AsolisSoprano }
+            \set Staff.instrumentName = \markup \center-column { "S" "solo" }
+            \new Voice = "SopranoSolo" { \dynamicUp \ExcelsusSopranoSolo }
           }
-          \new Lyrics \lyricsto Soprano \AsolisSopranoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \AsolisAlto }
-          }
-          \new Lyrics \lyricsto Alto \AsolisAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \AsolisTenore }
-          }
-          \new Lyrics \lyricsto Tenore \AsolisTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \AsolisBasso }
-          }
-          \new Lyrics \lyricsto Basso \AsolisBassoLyrics
+          \new Lyrics \lyricsto SopranoSolo \ExcelsusSopranoSoloLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \AsolisOrgano
+            \ExcelsusOrgano
           }
         >>
-        \new FiguredBass { \AsolisBassFigures }
+        \new FiguredBass { \ExcelsusBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2 = 70 }
+      \midi { \tempo 4 = 100 }
     }
   }
 }

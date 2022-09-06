@@ -11,6 +11,7 @@ tempoLaudate = \tempoMarkup "Allegro"
   tempoLaudateC = \tempoMarkup "Allegro"
 tempoAsolis = \tempoMarkup "Largo"
   tempoLaudabile = \tempoMarkup "Allegro"
+tempoExcelsus = \tempoMarkup "Allegro"
 
 
 \include "notes/vl1.ly"

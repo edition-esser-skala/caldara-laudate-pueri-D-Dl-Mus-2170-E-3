@@ -90,3 +90,64 @@ AsolisViolinoI = {
     b1\fermata \bar "|." %24 finis
   }
 }
+
+ExcelsusViolinoIeII = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/4 \tempoExcelsus
+    \partial 8 r8 R1*3
+    r2 r4 r8 d'\fE
+    d b16. a32 g8 es' es\trill d r g %5
+    g\trill fis r b b\trill a r d
+    d,-! d'-! d,-! d'-! es,16 d'( c b) c8 c
+    c,-! c'-! c,-! c'-! d,16 c'( b a) b8 b
+    b,-! b'-! b,-! b'-! c,16 b'( a g) a8 a
+    a,-! a'-! a,-! a'-! b,16 a'( g fis) g8 g %10
+    g,-! g'-! g,-! g'-! a,16 g'( fis e) fis8 d
+    c16 g'(\p fis e) fis8 c b16 a'(\f g fis) g8 g,
+    \kneeBeam d g' a,, fis'' g,,4 r
+    R1
+    r2 r4 r8 d''\fE %15
+    d b16. a32 g8 es' es\trill d r g
+    g\trill fis r b b\trill a r4
+    R1*2
+    r4 r8 a\p b,-! b'-! b,-! b'-! %20
+    c,16 b'( a g) a8 a a,-! a'-! a,-! a'-!
+    b,16 a'( g fis) g8 g g,-! g'-! g,-! g'-!
+    a,16 g'( f es) f8 f f,-! f'-! f,-! f'-!
+    g,16 f'( es d) es8 es es,-! es'-! es,-! es'-!
+    f,16 es'( d c) d8 b b\trill a r b, %25
+    b\trill a r d' d\trill c r d,
+    d\trill c r b'' b\trill a r b,
+    b\trill a r f d es d c
+    b16 c d es f8 a b b, r f''\f
+    f d16. c32 b8 g' g\trill f r b %30
+    b\trill a r d d\trill c r b
+    b,-! b'-! b,-! b'-! c,16 b' a g a8 f
+    es16 b'(\pE a g) a8 es d16 c'(\fE b a) b8 b,
+    \kneeBeam f b' c,, a'' b,,4 r
+    R1*2 %36
+    r4 r8 a''\f a fis16. e32 d8 b'
+    b\trill a r4 r2
+    c,8-!\p c'-! c,-! c'-! c,4\trill r
+    r2 b8-! b'-! b,-! b'-! %40
+    b,4\trill r r2
+    a8-! a'-! a,-! a'-! a,4\trill r
+    r2 g8-! g'-! g,-! g'-!
+    g,4\trill r d'8-! d'-! d,-! d'-!
+    d,4\trill r r2 %45
+    d8\f-! d'-! d,-! d'-! es,16 d'( c b) c8 c
+    c,-! c'-! c,-! c'-! d,16 c'( b a) b8 a16 g
+    fis8. e16 d4 r2
+    r r4 r8 d\f
+    d b16. a32 g8 es' es\trill d r g %50
+    g\trill fis r b b\trill a r d
+    d,-! d'-! d,-! d'-! es,16 d'( c b) c8 c
+    c,-! c'-! c,-! c'-! d,16 c'( b a) b8 b
+    b,-! b'-! b,-! b'-! c,16 b'( a g) a8 a
+    a,-! a'-! a,-! a'-! b,16 a'( g fis) g8 g %55
+    g,-! g'-! g,-! g'-! a,16 g'( fis e) fis8 d
+    c16 g'(\p fis e) fis8 c b16 a'(\f g fis) g8 g,
+    \kneeBeam d g' a,, fis'' g,,4 r\fermata \bar "|." %58 finis
+  }
+}
