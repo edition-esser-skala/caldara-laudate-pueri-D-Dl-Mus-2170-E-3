@@ -232,8 +232,6 @@ QuisSopranoSoloLyrics = \lyricmode {
   rem. %28 finis
 }
 
-% Ut col -- lo -- cet e -- um cum prin -- ci -- pi -- bus,
-% cum prin -- ci -- pi -- bus po -- pu -- li su -- i.
 % Qui ha -- bi -- ta -- re fa -- cit ste -- ri -- lem in do -- mo,
 % ma -- trem fi -- li -- o -- rum lae -- tan -- tem.
 % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,

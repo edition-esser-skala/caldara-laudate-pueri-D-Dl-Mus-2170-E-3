@@ -158,3 +158,74 @@ QuisSopranoLyrics = \lyricmode {
 
   e -- ri -- gens pau -- pe -- rem. %28 finis
 }
+
+UtcollocetSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/2 \autoBeamOff \tempoUtcollocet
+      \set Staff.timeSignatureFraction = 2/2
+    \mvTr d'1\fE^\tutti d2. d4
+    d1 es
+    d c2 f
+    b,4. b8 es1 d2
+    c1 b %5
+    a g2 d'~
+    d4 c b c b1
+    b4 c d es f2 c
+    d c1 b2
+    es d4 c d2 c4 b %10
+    c2 b4( a) b2 a4( g)
+    fis1 r
+    r2 c'2. b4 a c
+    b1 b4 a g b
+    a2 f g a %15
+    b4 f b1 a2
+    b1 r
+    r r2 b~
+    b4 a g b a1
+    b4 c d1 c2 %20
+    d1 r
+    R\breve*3
+    r1 g, %25
+    g2. g4 g1
+    b a2 c~
+    c4 b a c b2 b~
+    b4 a g b a1
+    d1. c2~ %30
+    c b a1
+    h\breve\fermata \bar "|." %32 finis
+  }
+}
+
+UtcollocetSopranoLyrics = \lyricmode {
+  Ut col -- lo --
+  cet e --
+  um cum prin --
+  ci -- pi -- bus po --
+  pu -- li %5
+  su -- i, cum __
+  prin -- ci -- pi -- bus
+  po -- _ _ _ _ _
+  _ pu -- li,
+  po -- _ _ _ _ _ %10
+  _ pu -- li su --
+  i,
+  cum prin -- ci -- pi --
+  bus po -- _ _ _
+  _ _ pu -- li %15
+  su -- _ _ _
+  i,
+  cum __
+  prin -- ci -- pi -- bus
+  po -- pu -- li su -- %20
+  i,
+
+  ut %25
+  col -- lo -- cet
+  e -- um cum __
+  prin -- ci -- pi -- bus, cum __
+  prin -- ci -- pi -- bus
+  po -- pu -- %30
+  li su --
+  i. %32 finis
+}

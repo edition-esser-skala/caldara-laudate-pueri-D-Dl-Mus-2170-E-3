@@ -14,6 +14,7 @@ tempoAsolis = \tempoMarkup "Largo"
 tempoExcelsus = \tempoMarkup "Allegro"
 tempoQuis = \tempoMarkup "Andante"
   tempoSuscitans = \tempoMarkup "Allegro"
+tempoUtcollocet = \tempoMarkup "[Tempo deest]"
 
 
 \include "notes/vl1.ly"

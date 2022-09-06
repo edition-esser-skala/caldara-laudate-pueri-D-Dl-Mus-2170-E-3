@@ -158,3 +158,69 @@ QuisTenoreLyrics = \lyricmode {
 
   e -- ri -- gens pau -- pe -- rem. %28 finis
 }
+
+UtcollocetTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \minor \time 4/2 \autoBeamOff \tempoUtcollocet
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*5 %5
+    \mvTr d1\fE^\tutti d2. d4
+    d1 es
+    d c2 f
+    b,4. b8 es1 d2
+    c1 b %10
+    a( g)
+    a2 d2. c4 b d
+    c2.( b4) a( g f a
+    g) a b1 b2(
+    c) d es1 %15
+    f\breve
+    f2 d2. c4 b d
+    c1 d4 c b a
+    g2 es'4 d c2 d4( es)
+    f2 b,1( es2) %20
+    a,1 a
+    a2. a4 a1
+    b g
+    r2 a2. g4 fis a
+    g2 h4 h c( b?) a c %25
+    b1 c4 d es2(
+    f) f, r a~
+    a4 g fis a g1~
+    g c
+    f,2 b g c4 b %30
+    a2 b4. c8 d1
+    d\breve\fermata \bar "|." %32 finis
+  }
+}
+
+UtcollocetTenoreLyrics = \lyricmode {
+  Ut col -- lo -- %6
+  cet e --
+  um cum prin --
+  ci -- pi -- bus po --
+  pu -- li %10
+  su --
+  i, cum prin -- ci -- pi --
+  bus __ po --
+  pu -- li, po --
+  pu -- li %15
+  su --
+  i, cum prin -- ci -- pi --
+  bus po -- _ _ _
+  _ _ _ _ pu --
+  li su -- %20
+  i, ut
+  col -- lo -- cet
+  e -- um
+  cum prin -- ci -- pi --
+  bus, cum prin -- ci -- pi -- bus %25
+  po -- pu -- li su --
+  i, cum __
+  prin -- ci -- pi -- bus __
+  po --
+  _ _ _ pu -- li %30
+  su -- _ _ _
+  i. %32 finis
+}

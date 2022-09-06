@@ -158,3 +158,76 @@ QuisAltoLyrics = \lyricmode {
 
   e -- ri -- gens pau -- pe -- rem. %28 finis
 }
+
+UtcollocetAlto = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/2 \autoBeamOff \tempoUtcollocet
+      \set Staff.timeSignatureFraction = 2/2
+    r1 \mvTr g'\fE^\tutti
+    g2. g4 g1
+    b a
+    g2 c f,4. f8 b2~
+    b a2. a4 g2~ %5
+    g fis g1
+    r2 g2. f4 es g
+    f1. g4( a
+    b2.) b4 a2 f
+    g a f g %10
+    es d1 c2
+    d1 r2 g~
+    g4 f es g f1
+    g2. f4 es1
+    f b,2 c %15
+    b4 c d2 c1
+    d r
+    r2 f2. es4 d f
+    es1. d4( c
+    d) es f2 g1 %20
+    fis r
+    R\breve*2
+    d1 d2. d4
+    d1 es %25
+    d2 es2. d4 c f
+    d2 d4 d c2. c4
+    d\breve
+    es1~ es4 d c es
+    d2 g es a4 g %30
+    fis2 g1 fis2
+    g\breve\fermata \bar "|." %32 finis
+  }
+}
+
+UtcollocetAltoLyrics = \lyricmode {
+  Ut
+  col -- lo -- cet
+  e -- um
+  cum prin -- ci -- pi -- bus, __
+  po -- pu -- li __ %5
+  su -- i,
+  cum prin -- ci -- pi --
+  bus po --
+  pu -- li, po --
+  _ _ _ _ %10
+  pu -- li su --
+  i, cum __
+  prin -- ci -- pi -- bus
+  po -- pu -- li,
+  po -- _ _ %15
+  _ pu -- li su --
+  i,
+  cum prin -- ci -- pi --
+  bus po --
+  pu -- li su -- %20
+  i,
+
+  ut col -- lo -- %24
+  cet e -- %25
+  um cum prin -- ci -- pi --
+  bus, cum prin -- ci -- pi --
+  bus
+  po -- _ _ _
+  _ _ _ pu -- li %30
+  su -- _ _
+  i. %32 finis
+}

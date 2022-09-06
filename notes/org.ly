@@ -335,3 +335,91 @@ QuisBassFigures = \figuremode {
   r1 \bo <[6]>4 <4>8 \bc <[3]>
   r2. %31 finis
 }
+
+UtcollocetOrgano = {
+  \relative c {
+    \clef treble
+    \key g \minor \time 4/2 \tempoUtcollocet
+      \set Staff.timeSignatureFraction = 2/2
+    << {
+      d''1 d2. d4
+      d1 es
+      d c2 f
+      b, es1 d2
+      c1 b %5
+    } \\ {
+      \mvTr r1\fE-\tutti g
+      g2. g4 g1
+      b a
+      g2 c f, b~
+      b a1 g2 %5
+    } >>
+    \clef "treble_8" d1 \clef bass g,
+    g2. g4 g1
+    b a
+    g2 c f, b~
+    b a1 g2~ %10
+    g fis g es
+    d1 \clef "treble_8" d'4 c b2
+    c2. b4 a g f a
+    g2 \clef bass g2. f4 es g
+    f1 es4 d c2 %15
+    d c4 b f'1
+    b,2 b'2. a4 g b
+    a2 a, b1
+    c\breve
+    b1 es %20
+    d \clef "treble_8" a'
+    << {
+      a2. a4 a1
+      b g
+    } \\ {
+      d1 d2. d4
+      d1 es
+    } >>
+    \clef bass d d2. c4
+    h2 d c1 %25
+    g'2. f4 es1
+    b4 c d es f1
+    fis g
+    c,~ c4 b a c
+    b1 c %30
+    d\breve
+    g,\fermata \bar "|." %32 finis
+  }
+}
+
+UtcollocetBassFigures = \figuremode {
+  r\breve
+  r
+  r
+  r
+  r %5
+  <4>2 <_+>1.
+  <5>1 <6>
+  r <6>
+  r2 <7> q1
+  <4 2>2 <6 3> <4 2> <6 3> %10
+  <4 2> <6 3>1 <6>2
+  <_+>1. <6>2
+  r1 <6>
+  r <[6]>
+  <5>2 <6>1 <6>2 %15
+  <6> \bassFigureExtendersOn <6 3\!>4 q \bassFigureExtendersOff <4>2 <3>
+  r\breve
+  <6>
+  <7>1 <6>
+  r <7>2 <6> %20
+  <_+>\breve
+  r
+  r
+  <_+>1.. <\t>4
+  <6>2 <6!>1. %25
+  <5>2 <6> <[6]>1
+  r\breve
+  <6 5>
+  <7>1 <6>2. \once \bassFigureExtendersOn q4
+  r1 <9>2 <8> %30
+  <7 _+> <6 4> <5 \t> <\t _+>
+  <_!>\breve %32 finis
+}

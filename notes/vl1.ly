@@ -192,3 +192,41 @@ QuisViolinoI = {
     \time 3/4 b2 r4\fermata \bar "|." %31 finis
   }
 }
+
+UtcollocetViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/2 \tempoUtcollocet
+      \set Staff.timeSignatureFraction = 2/2
+    d'1\fE d2. d4
+    d1 es
+    d c2 f
+    b,4. b8 es1 d2
+    c1 b %5
+    a g2 d'~
+    d4 c b c b1
+    b4 c d es f2 c
+    d c1 b2
+    es d4 c d2 c4 b %10
+    c2 b4 a b2 a4 g
+    fis1 r
+    r2 c'2. b4 a c
+    b1 b4 a g b
+    a2 f g a %15
+    b4 f b1 a2
+    b1 r
+    r r2 b~
+    b4 a g b a1
+    b4 c d1 c2 %20
+    d1 r
+    R\breve*3
+    r1 g, %25
+    g2. g4 g1
+    b a2 c~
+    c4 b a c b2 b~
+    b4 a g b a1
+    d1. c2~ %30
+    c b a1
+    h\breve\fermata \bar "|." %32 finis
+  }
+}

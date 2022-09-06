@@ -159,3 +159,69 @@ QuisBassoLyrics = \lyricmode {
 
   e -- ri -- gens pau -- pe -- rem. %28 finis
 }
+
+UtcollocetBasso = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 4/2 \autoBeamOff \tempoUtcollocet
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*5 %5
+    r1 \mvTr g'\fE^\tutti
+    g2. g4 g1
+    b a
+    g2 c f,4. f8 b2~
+    b a1 g2~ %10
+    g fis g( es)
+    d1 r
+    R\breve
+    r2 g2. f4 es g
+    f1 es4 d c es %15
+    d2 c4 b f'1
+    b,2 b'2. a4 g b
+    a2 a, b1
+    c1. c2
+    b1 es %20
+    d r
+    d d2. d4
+    d1 es
+    d d2. c4
+    h2 d c1 %25
+    g'2. f4 es2 es
+    b4( c d es) f1
+    fis g
+    c,~ c4 b a c
+    b1 c2 c4 c %30
+    d\breve
+    g,\fermata \bar "|." %32 finis
+  }
+}
+
+UtcollocetBassoLyrics = \lyricmode {
+  Ut %6
+  col -- lo -- cet
+  e -- um
+  cum prin -- ci -- pi -- bus __
+  po -- pu -- %10
+  li su --
+  i,
+
+  cum prin -- ci -- pi --
+  bus po -- _ _ _ %15
+  _ pu -- li su --
+  i, cum prin -- ci -- pi --
+  bus po -- _
+  _ pu --
+  li su -- %20
+  i,
+  ut col -- lo --
+  cet e --
+  um cum prin --
+  ci -- pi -- bus, %25
+  cum prin -- ci -- pi --
+  bus __ po --
+  pu -- li,
+  cum __ prin -- ci -- pi --
+  bus po -- pu -- li %30
+  su --
+  i. %32 finis
+}
