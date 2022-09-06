@@ -91,3 +91,44 @@ AsolisViolinoII = {
     f1\fermata \bar "|." %24 finis
   }
 }
+
+QuisViolinoII = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \tempoQuis
+    r4 b'\fE b b
+    d4. d8 d2
+    d4 d8 d d4 d
+    h2 h
+    c4 c8 c c4. c8 %5
+    c2 c
+    f,8\p r as r g r f e
+    f r e r f r f r
+    des r des r c2\fermata
+    c8\fE r c r c r c c %10
+    c4. c8 d c h4
+    R1
+    r4 h8\fE h c d es d
+    c c c c h h c c
+    c c h h c2 %15
+    r4 a'!8\pE g f es d4
+    r2 r4 f8\fE f
+    f f f f es es es es
+    es es d d c c c c \noBreak
+    d1\fermata \bar "||" %20
+    \time 6/4 \tempoSuscitans
+      \set Staff.timeSignatureFraction = 3/2
+      \override Staff.TimeSignature.style = #'single-digit
+      b'4\pE r a b b, r4 \noBreak
+    b'16\fE d c d b b b b c c c c b d c d f g es f d4
+    b8\pE a b c d e? f16 e f e f g e g f4
+    d16\fE f c f d f c f d f e g a g a g f c f c f4
+    f,8\pE f f f f f g g g g g g %25
+    a a a a a a b b b b b b
+    c c c c c c d c d es c4
+    b16\fE d es f g8 g, f f' d4 r r
+    r16 f g a b8 d, c a' b,16 d es f g8 b, a f'
+    g,16 b c d es8 g, f d' es, a b b4 a8 %30
+    \time 3/4 b2 r4\fermata \bar "|." %31 finis
+  }
+}

@@ -151,3 +151,44 @@ ExcelsusViolinoIeII = {
     \kneeBeam d g' a,, fis'' g,,4 r\fermata \bar "|." %58 finis
   }
 }
+
+QuisViolinoI = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \tempoQuis
+    r4 g''\fE g g
+    b4. b8 b2
+    f4 f8 f f4 f,
+    d'2 d
+    es4 es8 es e4. e8 %5
+    f2 f
+    as,8\p r c r b r as g
+    f r g r as r as r
+    f r f r e2\fermata
+    e8\fE r e r e r e e %10
+    fis4. fis8 g2
+    R1
+    r4 d8\f d es f g4
+    f8 f f f f f es es
+    d d d d c2 %15
+    r4 f8\p es d c b4
+    r2 r4 a'8\f a
+    b b b b b b a g
+    a f b, b b b a a \noBreak
+    b1\fermata \bar "||" %20
+    \time 6/4 \tempoSuscitans
+      \set Staff.timeSignatureFraction = 3/2
+      \override Staff.TimeSignature.style = #'single-digit
+      d'4\p r c d d, r \noBreak
+    d'16\f f es f d d es es f f es es d f es f d es c d b4
+    d8\p c d a b g a16 g a g a b a b a4
+    d16\f f c f d f c f d f e g a g a g f c f c f4
+    a,8\p a a a d4~ d8 c16 d b8 d es4~ %25
+    es8 d16 es c8 es f4~ f8 es16 f d8 f g4~
+    g8 f16 g es8 c a c b a b es, f4
+    b16\f f' g a b8 b, a a' b,16 f' g a b8 d, c a'
+    b,16 d es f g8 b, a f' g,16 b c d es8 g, f d'
+    es,16 g a b c8 es, d b' c, c' d b' c,4 %30
+    \time 3/4 b2 r4\fermata \bar "|." %31 finis
+  }
+}

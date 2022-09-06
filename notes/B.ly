@@ -95,3 +95,67 @@ AsolisBassoLyrics = \lyricmode {
   _ mi --
   ni. %24 finis
 }
+
+QuisBasso = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 4/4 \autoBeamOff \tempoQuis
+    r4 es\fE es es
+    b4. b8 b2
+    as4 as8 as as4 as
+    g2 g
+    c4 c8 c b!4. b8 %5
+    as2 as
+    R1*2
+    R1\fermata
+    c4 c b! b8 b %10
+    as4. as8 g2
+    R1
+    r4 g'8 f es([ d)] c b
+    as4 g8[ f] g2~
+    g c %15
+    R1
+    r2 r4 f8 es
+    d([ c)] b a g4 f8[ es]
+    f1 \noBreak
+    b\fermata \bar "||" %20
+    \time 6/4 \tempoSuscitans
+      \set Staff.timeSignatureFraction = 3/2
+      \override Staff.TimeSignature.style = #'single-digit
+      R1.
+    b'8.\fE b16 b8 g a f b4. b8 b4
+    R1.
+    b8([ a b a)] b([ g)] f4. f8 f4
+    R1.*3
+    b4 g8 es f8. f16 b,2 r4
+    R1.*2 %30
+    \time 3/4 R2.\fermata \bar "|." %31 finis
+  }
+}
+
+QuisBassoLyrics = \lyricmode {
+  Quis si -- cut
+  Do -- mi -- nus,
+  Do -- mi -- nus De -- us
+  no -- ster,
+  Do -- mi -- nus De -- us %5
+  no -- ster,
+
+  et hu -- mi -- li -- a %10
+  re -- spi -- cit
+
+  et in ter -- ra, in
+  ter -- _ _
+  ra, %15
+
+  et in
+  ter -- ra, in ter --_
+  _
+  ra? %20
+
+  Su -- sci -- tans a ter -- ra in -- o -- pem,
+
+  et __ de ster -- co -- re
+
+  e -- ri -- gens pau -- pe -- rem. %28 finis
+}

@@ -267,3 +267,71 @@ ExcelsusBassFigures = \figuremode {
   r1
   \bo <[_+]>8 <5> <6> \bc <[_+]> r2 %58 finis
 }
+
+QuisOrgano = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 4/4 \tempoQuis
+    r4 \mvTr es\fE-\tutti es2
+    b1
+    as
+    g
+    c2 b! %5
+    as1
+    R1*2
+    R1\fermata
+    c2\fE b! %10
+    as g
+    R1
+    r4 g'8\fE f es d c b
+    as4 g8 f g2~
+    g c %15
+    R1
+    r2 r4 f8\fE es
+    d c b a g4 f8 es \noBreak
+    f1
+    b\fermata \bar "||" %20
+    \time 6/4 \tempoSuscitans
+      \set Staff.timeSignatureFraction = 3/2
+      \override Staff.TimeSignature.style = #'single-digit
+      R1. \noBreak
+    \mvTr b'8.\fE-\tutti b16 b8 g a f b2 b,4
+    R1.
+    b'8\fE a b a b g f2 f,4
+    R1.*3 %27
+    b'4\fE g8 es f f, b2 r4
+    R1.
+    r2 r4 r8 \mvTr f'\fE-\solo d b f' f,
+    \time 3/4 b2 r4\fermata \bar "|." %30 finis
+  }
+}
+
+QuisBassFigures = \figuremode {
+  r1
+  r
+  <6 4 2>
+  <7 _!>
+  r2 <6 4! 2> %5
+  <6>1
+  r1*3
+  <_!>2 <4! 2> %10
+  <6\\> <_!>
+  r1
+  r4 <_!>8 <\t> <6>4. \once \bassFigureExtendersOn q8
+  \bo <[6 \l]>4 <\t>8 \bc <[6 _-]> <7 _!>4 <6 4>
+  <5 \t> <\t _!>2. %15
+  r1
+  r2. <_!>8 <\t>
+  r2 <6>4 \bo <[\t]>8 \bc <[6]>
+  <7 3>4 <6 4> <5 \t> <\t 3>
+  r1 %20
+  r1.
+  r4. \bo <[6]>8 <6> \bc <[7]> r2.
+  r1.
+  r8 \bo <[6]>4 \bc q <6!>8 r2.
+  r1.*3 %27
+  r4. <[6]>8 r1
+  r1.
+  r1 \bo <[6]>4 <4>8 \bc <[3]>
+  r2. %31 finis
+}

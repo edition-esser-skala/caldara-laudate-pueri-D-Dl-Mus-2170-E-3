@@ -177,11 +177,61 @@ ExcelsusSopranoSoloLyrics = \lyricmode {
   ius. %50 finis
 }
 
+QuisSopranoSolo = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \autoBeamOff \tempoQuis
+    R1*6 %6
+    c'4\pE f e f8 g
+    as4 g f8[( es des c]
+    h4.) c8 c2\fermata
+    R1*2 %11
+    r4 g d'2
+    d r
+    R1
+    r2 r4 c8 b! %15
+    a!4 a8 a b8. b16 b8 b
+    f'2 f
+    R1*2 \noBreak
+    R1\fermata \bar "||" %20
+    \time 6/4 \tempoSuscitans
+      \set Staff.timeSignatureFraction = 3/2
+      \override Staff.TimeSignature.style = #'single-digit
+      b,8.\pE c16 d8 es f es d4. c8 b4 \noBreak %20
+    R1.
+    b8([ a b c)] d([ e)] f4. e16([ d)] c4
+    R1.
+    a4. g16[ a] f8[ a] b4. a16[ b] g8[ b]
+    c4. b16[ c] a8[ c] d4. c16[ d] b8[ d] %25
+    es4. d16[ es] c8[ es] f4 b,8 c a8. b16
+    b2 r4 r2 r4
+    R1.*2
+    \time 3/4 R2.\fermata \bar "|." %30 finis
+  }
+}
 
-% Quis si -- cut Do -- mi -- nus De -- us no -- ster, qui in al -- tis ha -- bi -- tat,
-% et hu -- mi -- li -- a re -- spi -- cit in coe -- lo et in ter -- ra?
-% Su -- sci -- tans a ter -- ra in -- o -- pem,
-% et de ster -- co -- re e -- ri -- gens pau -- pe -- rem.
+QuisSopranoSoloLyrics = \lyricmode {
+  Qui in al -- tis, in %7
+  al -- tis ha --
+  bi -- tat,
+
+  in coe -- %12
+  lo,
+
+  et hu -- %15
+  mi -- li -- a re -- spi -- cit in
+  coe -- lo?
+
+  Su -- sci -- tans a ter -- ra in -- o -- pem, %21
+
+  et __ de __ ster -- co -- re
+
+  e -- _ _ _ _ _ %25
+  _ _ _ _ _ _
+  _ _ _ _ ri -- gens pau -- pe --
+  rem. %28 finis
+}
+
 % Ut col -- lo -- cet e -- um cum prin -- ci -- pi -- bus,
 % cum prin -- ci -- pi -- bus po -- pu -- li su -- i.
 % Qui ha -- bi -- ta -- re fa -- cit ste -- ri -- lem in do -- mo,

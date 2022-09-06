@@ -145,41 +145,116 @@
   %     \midi { \tempo 2 = 70 }
   %   }
   % }
+  % \bookpart {
+  %   \section "3" "Excelsus super omnes"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #20
+  %     system-system-spacing.minimum-distance = #20
+  %     systems-per-page = #4
+  %     page-count = #4
+  %   }
+  %   \score {
+  %     <<
+  %       \new StaffGroup \with { \smallGroupDistance } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
+  %           \ExcelsusViolinoIeII
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "S" "solo" }
+  %           \new Voice = "SopranoSolo" { \dynamicUp \ExcelsusSopranoSolo }
+  %         }
+  %         \new Lyrics \lyricsto SopranoSolo \ExcelsusSopranoSoloLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \ExcelsusOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \ExcelsusBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 100 }
+  %   }
+  % }
   \bookpart {
-    \section "3" "Excelsus super omnes"
+    \section "4" "Quis sicut Dominus"
     \addTocEntry
     \paper {
-      system-system-spacing.basic-distance = #20
-      system-system-spacing.minimum-distance = #20
-      systems-per-page = #4
-      page-count = #4
+      top-system-spacing.basic-distance = #10
+      top-system-spacing.minimum-distance = #10
+      top-markup-spacing.basic-distance = #0
+      top-markup-spacing.minimum-distance = #0
+      markup-system-spacing.basic-distance = #10
+      markup-system-spacing.minimum-distance = #10
+      system-system-spacing.basic-distance = #17
+      system-system-spacing.minimum-distance = #17
+      systems-per-page = #2
     }
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
-          \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
-            \ExcelsusViolinoIeII
-          }
+        \new StaffGroup <<
+          \new GrandStaff \with { \setGroupDistance #11 #12 } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \QuisViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \QuisViolinoII
+            }
+          >>
         >>
-        \new ChoirStaff <<
+        \new ChoirStaff \with { \setGroupDistance #12 #12 } <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "S" "solo" }
-            \new Voice = "SopranoSolo" { \dynamicUp \ExcelsusSopranoSolo }
+            \new Voice = "SopranoSolo" { \dynamicUp \QuisSopranoSolo }
           }
-          \new Lyrics \lyricsto SopranoSolo \ExcelsusSopranoSoloLyrics
+          \new Lyrics \lyricsto SopranoSolo \QuisSopranoSoloLyrics
+        >>
+        \new ChoirStaff \with { \setGroupDistance #12 #12 } <<
+          \set ChoirStaff.instrumentName = \markup \rotate #90 "Coro"
+          \new Staff {
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \QuisSoprano }
+          }
+          \new Lyrics \lyricsto Soprano \QuisSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \QuisAlto }
+          }
+          \new Lyrics \lyricsto Alto \QuisAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \QuisTenore }
+          }
+          \new Lyrics \lyricsto Tenore \QuisTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \QuisBasso }
+          }
+          \new Lyrics \lyricsto Basso \QuisBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \ExcelsusOrgano
+            \QuisOrgano
           }
         >>
-        \new FiguredBass { \ExcelsusBassFigures }
+        \new FiguredBass { \QuisBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 100 }
+      \midi { \tempo 2 = 60 }
     }
   }
 }

@@ -94,3 +94,67 @@ AsolisTenoreLyrics = \lyricmode {
   _ _ mi --
   ni. %24 finis
 }
+
+QuisTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key es \lydian \time 4/4 \autoBeamOff \tempoQuis
+    r4 es\fE es es
+    d4. d8 d2
+    d4 d8 d d4 d
+    d2 d
+    c4 c8 c c4. c8 %5
+    f,2 f
+    R1*2
+    R1\fermata
+    c'4 c c c8 c %10
+    c4. c8 d2
+    R1
+    r4 h8 h c2
+    c4. d8 h4 c~
+    c h c2 %15
+    R1
+    r2 r4 a!8 a
+    b2.. c8
+    a4 b2 a4 \noBreak
+    b1\fermata \bar "||" %20
+    \time 6/4 \tempoSuscitans
+      \set Staff.timeSignatureFraction = 3/2
+      \override Staff.TimeSignature.style = #'single-digit
+      R1. \noBreak
+    d8.\fE d16 d8 b c c b4. c8 d4
+    R1.
+    d8([ c d c)] d([ b)] c4. c8 c4
+    R1.*3 %27
+    d4 d8 es c8. c16 d2 r4
+    R1.*2 %30
+    \time 3/4 R2.\fermata \bar "|." %31 finis
+  }
+}
+
+QuisTenoreLyrics = \lyricmode {
+  Quis si -- cut
+  Do -- mi -- nus,
+  Do -- mi -- nus De -- us
+  no -- ster,
+  Do -- mi -- nus De -- us %5
+  no -- ster,
+
+  et hu -- mi -- li -- a %10
+  re -- spi -- cit
+
+  et in ter --
+  ra, in ter -- _
+  _ ra, %15
+
+  et in
+  ter -- _
+  _ _ _
+  ra? %20
+
+  Su -- sci -- tans a ter -- ra in -- o -- pem,
+
+  et __ de __ ster -- co -- re
+
+  e -- ri -- gens pau -- pe -- rem. %28 finis
+}

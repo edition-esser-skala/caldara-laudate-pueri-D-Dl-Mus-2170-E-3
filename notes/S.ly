@@ -96,3 +96,65 @@ AsolisSopranoLyrics = \lyricmode {
   _ _ mi --
   ni. %24 finis
 }
+
+QuisSoprano = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \autoBeamOff \tempoQuis
+    r4 b'\fE b b
+    b4. b8 b2
+    b4 b8 b b4 b
+    h2 h
+    g4 g8 g g4. g8 %5
+    f2 f
+    R1*2
+    R1\fermata
+    g4 g g g8 g %10
+    c4. c8 h2
+    R1
+    r2 g8 f es4
+    f2. es4
+    d2 es %15
+    R1*2
+    f8 es d4 es2~
+    es4 d c2 \noBreak
+    d1\fermata \bar "||" %20
+    \time 6/4 \tempoSuscitans
+      \set Staff.timeSignatureFraction = 3/2
+      \override Staff.TimeSignature.style = #'single-digit
+      R1. \noBreak
+    b'8.\fE c16 d8 es f es d4. c8 b4
+    R1.
+    b8([ c b c)] b4 a4. a8 a4
+    R1.*3 %27
+    b4 b8 c a8. a16 b2 r4
+    R1.*2 %30
+    \time 3/4 R2.\fermata \bar "|." %31 finis
+  }
+}
+
+QuisSopranoLyrics = \lyricmode {
+  Quis si -- cut
+  Do -- mi -- nus,
+  Do -- mi -- nus De -- us
+  no -- ster,
+  Do -- mi -- nus De -- us %5
+  no -- ster,
+
+  et hu -- mi -- li -- a %10
+  re -- spi -- cit
+
+  et in ter --
+  ra, in
+  ter -- ra, %15
+
+  et in ter -- ra, __ %18
+  in ter --
+  ra? %20
+
+  Su -- sci -- tans a ter -- ra in -- o -- pem,
+
+  et __ de ster -- co -- re
+
+  e -- ri -- gens pau -- pe -- rem. %28 finis
+}
