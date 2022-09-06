@@ -58,3 +58,35 @@ LaudateViolinoI = {
     c16 as g f es8-! d-! c4 r\fermata \bar "|." %53 finis
   }
 }
+
+AsolisViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/2 \tempoAsolis
+    g2\fE b d
+    g g, r
+    d' fis a
+    d d, r
+    g, b d %5
+    g g g
+    f! f f
+    e e e
+    es es es
+    d d d %10
+    d fis a
+    d d, r \noBreak
+    R1.\fermata \bar "||"
+    \time 4/4 \tempoLaudabile \newSpacingSection
+      r8 b' b b16 b a8. g16 a8 f \noBreak
+    b4~ b16 c d es f2~ %15
+    f8 es d4 c8 b a4
+    g4. g8 a4 r
+    R1
+    r2 r8 b b b16 b
+    as8. g16 as8 f g4. a?8 %20
+    b c16 d es4. d16 c d4
+    c2 b
+    a!4 b2 a4
+    b1\fermata \bar "|." %24 finis
+  }
+}

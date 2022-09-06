@@ -38,3 +38,60 @@ LaudateBassoLyrics = \lyricmode {
   in sae -- cu -- lum, in sae -- cu -- %48
   lum. %49 finis
 }
+
+AsolisBasso = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 3/2 \autoBeamOff \tempoAsolis
+    R1.
+    \mvTr g'2\fE^\tutti b g
+    d' d, r
+    d2. c4 b a
+    g2 b d %5
+    g1.
+    f!
+    e
+    es
+    d %10
+    d2 fis a4 a
+    d2 d, r \noBreak
+    R1.\fermata \bar "||"
+    \time 4/4 \tempoLaudabile \newSpacingSection
+      R1 \noBreak
+    r2 r8 f f f16 f %15
+    d8. c16 d8 b c4^\critnote d8[ a]
+    b[ g] c8. c16 f8 f f f16 es!
+    d8. c16 d8 b c4. d8
+    es8[ f g a!] b8. b,16 b4
+    r8 f' f f16 f es8. d16 es8 c %20
+    d4 c b~ b16[ c d b]
+    f'8[ g f es] d4 es
+    f2. f4
+    b,1\fermata \bar "|." %24 finis
+  }
+}
+
+AsolisBassoLyrics = \lyricmode {
+  A so -- lis %2
+  or -- tu
+  us -- que ad oc --
+  ca -- _ _ %5
+  _
+  _
+  _
+  _
+  sum, %10
+  us -- que ad oc --
+  ca -- sum,
+
+  lau -- da -- bi -- le %15
+  no -- men, no -- men Do -- _
+  _ _ mi -- ni, lau -- da -- bi -- le
+  no -- men, no -- men Do -- _
+  _ _ mi -- ni,
+  lau -- da -- bi -- le no -- men, no -- men %20
+  Do -- _ _
+  _ _ _
+  _ mi --
+  ni. %24 finis
+}

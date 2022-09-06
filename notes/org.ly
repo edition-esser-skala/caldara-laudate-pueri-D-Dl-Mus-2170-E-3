@@ -82,3 +82,62 @@ LaudateBassFigures = \figuremode {
   <_!>2 q4 \bo <[6 4]>8 <5 _!>
   r4 <6 4>8 \bc <[5 _!]> r2 %53 finis
 }
+
+AsolisOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 3/2 \tempoAsolis
+    \mvTr g2\fE-\tutti-! b-! d-!
+    g g, r
+    d' fis a
+    d d, r
+    g, b d %5
+    g g g
+    f! f f
+    e e e
+    es es es
+    d d d %10
+    d fis a
+    d d, r \noBreak
+    R1.\fermata \bar "||"
+    \time 4/4 \tempoLaudabile \newSpacingSection
+      d8 c d b f' f, f'16 es d c \noBreak
+    b8 b' b b a f f f %15
+    d8. c16 d8 b c c d a
+    b g c c, f f' f es!
+    d8. c16 d8 b c b c d
+    es f g a! b b, b b'
+    f f f, f' es8. d16 es8 c %20
+    d d c c b b^\critnote b16 c d b
+    f'8 g f es d d es es
+    f1 \noBreak
+    b,\fermata \bar "|." %24 finis
+  }
+}
+
+AsolisBassFigures = \figuremode {
+  r1.
+  r
+  <[6 4]>2 \bo <[6]> <5! _+>
+  \bc <[_+]>1.
+  r2 <[6]> <_+> %5
+  r1.
+  <4!>
+  <6>
+  <6\\>
+  <_+> %10
+  \bo <[\t \l]>2 <6> \bc <[5! _+]>
+  <_+>1.
+  r
+  <6 [_!]>1
+  r2 <6> %15
+  q4. \bo <[6 \l]>8 <_!>4 <5>8 <6>
+  <6 5>4 <_!>2 r8 \bc <[4 2]>
+  <6>2 <6->4. <\t>8
+  r \bo <[7 _!]> <6> <6 5> r2
+  <5 _->4. <6 \t>2 \bc <[6! \l]>8 %20
+  <6>4 \bo <[5]>8 \bc <[6]> <5 4>4 <\t 3>
+  \bo <[5 4]> <\t _-> \bc <[6 5-]>2
+  <7 _!>4 <6 4> <5 \t> <\t 3>
+  r1 %24 finis
+}

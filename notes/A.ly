@@ -38,3 +38,59 @@ LaudateAltoLyrics = \lyricmode {
   in sae -- cu -- lum, in sae -- cu -- %48
   lum. %49 finis
 }
+
+AsolisAlto = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/2 \autoBeamOff \tempoAsolis
+    R1.
+    \mvTr g'2\fE^\tutti g g
+    g fis r
+    fis2. fis4 g fis
+    g1 fis2 %5
+    g1.~
+    g~
+    g~
+    g
+    fis %10
+    fis2 fis e4 e
+    fis2 fis r \noBreak
+    R1.\fermata \bar "||"
+    \time 4/4 \tempoLaudabile \newSpacingSection
+      r2 r8 f f f16 f \noBreak
+    d8. c16 d8 b c4~ c16[ d b c] %15
+    d4. g8 e[ c] f4~
+    f e f r
+    R1
+    r8 es! es es16 es d8. c16 d8 b
+    c4. d8 es2 %20
+    f4 g8[ a] b[ f]b4~
+    b as2 g4
+    f2. f4
+    f1\fermata \bar "|." %24 finis
+  }
+}
+
+AsolisAltoLyrics = \lyricmode {
+  A so -- lis %2
+  or -- tu
+  us -- que ad oc --
+  ca -- _ %5
+  _
+
+  sum, %10
+  us -- que ad oc --
+  ca -- sum,
+
+  lau -- da -- bi -- le
+  no -- men, no -- men Do -- %15
+  _ _ _ _
+  mi -- ni,
+
+  lau -- da -- bi -- le no -- men, no -- men
+  Do -- _ _ %20
+  _ _ _ _
+  _ _
+  _ mi --
+  ni. %24 finis
+}

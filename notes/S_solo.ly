@@ -87,8 +87,7 @@ LaudateSopranoSoloLyrics = \lyricmode {
 }
 
 
-% A so -- lis or -- tu us -- que ad oc -- ca -- sum,
-% lau -- da -- bi -- le no -- men Do -- mi -- ni.
+
 % Ex -- cel -- sus su -- per o -- mnes gen -- tes Do -- mi -- nus,
 % su -- per coe -- los glo -- ri -- a e -- ius.
 % Quis si -- cut Do -- mi -- nus De -- us no -- ster, qui in al -- tis ha -- bi -- tat,
