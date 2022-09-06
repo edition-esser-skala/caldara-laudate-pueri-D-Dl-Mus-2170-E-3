@@ -7,6 +7,8 @@
 
 
 tempoLaudate = \tempoMarkup "Allegro"
+  tempoLaudateB = \tempoMarkup "Adagio"
+  tempoLaudateC = \tempoMarkup "Allegro"
 
 
 \include "notes/vl1.ly"

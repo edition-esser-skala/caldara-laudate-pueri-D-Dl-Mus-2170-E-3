@@ -3,42 +3,26 @@
 \include "../definitions.ly"
 \include "score_settings/full-score.ly"
 
-% \paper {
-%   top-system-spacing.basic-distance = #10
-%   top-system-spacing.minimum-distance = #10
-%   top-markup-spacing.basic-distance = #0
-%   top-markup-spacing.minimum-distance = #0
-%   markup-system-spacing.basic-distance = #10
-%   markup-system-spacing.minimum-distance = #10
-%   system-system-spacing.basic-distance = #17
-%   system-system-spacing.minimum-distance = #17
-%   systems-per-page = #2
-% }
-%
-% \layout {
-%   \context {
-%     \StaffGroup
-%     \setGroupDistance #11 #11
-%   }
-%   \context {
-%     \GrandStaff
-%     \setGroupDistance #11 #11
-%   }
-%   \context {
-%     \ChoirStaff
-%     \setGroupDistance #12 #13
-%   }
-% }
-
 \book {
   \bookpart {
     \section "1" "Laudate pueri"
-    % \addTocEntry
-    \paper { indent = 3\cm }
+    \addTocEntry
+    \paper {
+      top-system-spacing.basic-distance = #10
+      top-system-spacing.minimum-distance = #10
+      top-markup-spacing.basic-distance = #0
+      top-markup-spacing.minimum-distance = #0
+      markup-system-spacing.basic-distance = #10
+      markup-system-spacing.minimum-distance = #10
+      system-system-spacing.basic-distance = #17
+      system-system-spacing.minimum-distance = #17
+      systems-per-page = #2
+      indent = 3\cm
+    }
     \score {
       <<
         \new StaffGroup <<
-          \new GrandStaff  <<
+          \new GrandStaff \with { \setGroupDistance #11 #12 } <<
             \set GrandStaff.instrumentName = "Violino"
             \new Staff {
               \set Staff.instrumentName = "I"
@@ -50,14 +34,14 @@
             }
           >>
         >>
-        \new ChoirStaff <<
+        \new ChoirStaff \with { \setGroupDistance #12 #12 } <<
           \new Staff {
             \incipit \markup \center-column { "Soprano" "solo" } "soprano" #-18 #-2.8
             \new Voice = "SopranoSolo" { \dynamicUp \LaudateSopranoSolo }
           }
           \new Lyrics \lyricsto SopranoSolo \LaudateSopranoSoloLyrics
         >>
-        \new ChoirStaff <<
+        \new ChoirStaff \with { \setGroupDistance #12 #12 } <<
           \set ChoirStaff.instrumentName = \markup { \rotate #90 "C O R O" \hspace #10 }
           \new Staff {
             \incipitSoprano
@@ -93,7 +77,7 @@
         \new FiguredBass { \LaudateBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 100 }
     }
   }
 }
