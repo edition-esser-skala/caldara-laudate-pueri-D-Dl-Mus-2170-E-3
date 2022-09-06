@@ -232,8 +232,100 @@ QuisSopranoSoloLyrics = \lyricmode {
   rem. %28 finis
 }
 
-% Qui ha -- bi -- ta -- re fa -- cit ste -- ri -- lem in do -- mo,
-% ma -- trem fi -- li -- o -- rum lae -- tan -- tem.
-% Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
-% si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
-% et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
+QuihabitareSopranoSolo = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 6/4 \autoBeamOff \tempoQuihabitare
+      \set Staff.timeSignatureFraction = 3/2
+      \override Staff.TimeSignature.style = #'single-digit
+      R1.*7 %7
+    r2 r4 es'4\pE b8 c g as
+    b4 es, r es'4. f8 des es
+    c2 b4. c8 as?2 %10
+    g r4 es'4. f8 g es
+    f([ d)] b4. d8 es[ d c g' f es]
+    d[ c b f' es d] c[ b a es' d c]
+    b[ a g d' c b] a[ g f c' d e]
+    f1.~ %15
+    f~
+    f~
+    f2. r8 d[ es f g a]
+    b[ a g f es d] c[ b a g f es']
+    d16[ es f g] c,2\trill b r4 %20
+    R1.*2
+    g'4 d8 es b c d4 g, r
+    g'4. f8 es d es[ d c b a g]
+    fis'4. e?8 d4 r d8 c b a %25
+    b[ a g a b c] d2.~
+    d8[ c16 d] a8[ b fis g] \once \tieDashed a2.~\trill
+    \time 3/4 a8[ b16 c] d8[ d16 e] fis8[ fis16 g]
+    \time 6/4 a[ g fis e?] d8[ g f? es] d[ c] b c a4
+    g2 r4 r2 r4 %30
+    r2 r4 d' d4. es8
+    f2 b,4 r2 r4
+    b d4. es8 f4. b,8 b4
+    r2 r4 f'8 es d([ c)] b as
+    g4.( f8) es4 r2 r4 %35
+    r es'8([ f)] g([ es)] c4 c d8 es
+    f es d es d c h4.( a8) g4
+    r g8([ a)] h([ g)] c4 c8 d es c
+    f[ es f g f es] d[ c b c d b] es1.~
+    es~ %40
+    es~
+    es2.~
+    es8[ des des es c b]
+    c16[ d es f] d[ es f g] es[ f g f] g[ f es f] d2\trill
+    es r4 r2 r4 %45
+    r2 r4 r es es
+    des8 c des4 es8 des c[ b as c b as]
+    b4. c8 d8.[ es16] f[ es f g] f[ g f g] f[ g f g]
+    es[ d es f] es[ f es f] es[ f es f] d[ es d es] d[ es d es] d[ es f d]
+    g8[ f] es[ f16 g] f8[ es]^\critnote f[ d b as' g f] %50
+    g[ es16 f] f2\trill es r4
+    R1.*5 %56
+    R1.\fermata \bar "|." %57 finis
+  }
+}
+
+QuihabitareSopranoSoloLyrics = \lyricmode {
+  Qui ha -- bi -- ta -- re %8
+  fa -- cit ste -- ri -- lem
+  in do -- mo, in do -- %10
+  mo, ma -- trem fi -- li --
+  o -- rum lae -- tan --
+  _ _
+  _ _
+  _ %15
+
+  _ %18
+  _ _
+  _ _ tem. %20
+
+  Qui ha -- bi -- ta -- re fa -- cit %23
+  ste -- ri -- lem in do --
+  _ _ mo, ma -- trem fi -- li -- %25
+  o -- _
+  _ _
+  _ _
+  _ _ _ rum lae -- tan --
+  tem. %30
+  Glo -- ri -- a
+  Pa -- tri,
+  Pa -- tri et Fi -- li -- o
+  et Spi -- ri -- tu -- i
+  San -- cto, %35
+  si -- cut e -- rat in prin --
+  ci -- pi -- o et nunc et sem -- per
+  et __ in __ sae -- cu -- la sae -- cu --
+  lo -- _
+  _ %4ß
+
+  _ _ _ _ _ %44
+  rum, %45
+  et in
+  sae -- cu -- la sae -- cu -- lo --
+  _ _ _ _ _ _
+  _ _ _ _ _ _
+  _ _ _ _ %50
+  _ _ rum. %51 finis
+}

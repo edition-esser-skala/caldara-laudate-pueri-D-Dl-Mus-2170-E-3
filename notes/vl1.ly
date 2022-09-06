@@ -230,3 +230,67 @@ UtcollocetViolinoI = {
     h\breve\fermata \bar "|." %32 finis
   }
 }
+
+QuihabitareViolinoIeII = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 6/4 \tempoQuihabitare
+      \set Staff.timeSignatureFraction = 3/2
+      \override Staff.TimeSignature.style = #'single-digit
+    es'4\fE b8 c g as b4 es, r8 es'
+    d16 es f g as8-! f,-! d-! b''-! g4 g,, r8 g''16 as
+    b b, b' b, b' b, b' b, b' b, b' b, as' b, as' b, as' b, as' b, as' b, as' b,
+    g' b, g' b, g' b, g' b, g' b, g' b, f' b, f' b, f' b, f' b, f' b, f' b,
+    es b es b es b es b es b es b d b d b es b es b f' b, f' b, %5
+    g' b, g' b, as' b, as' b, b' b, b' b, as'4 b,, r8 as''
+    g es b, es' b, d' es16 b c d es b c d es b c d
+    es b c d es b c d es g, as b es,4 r r
+    es' b8 c g as b4 es, r
+    R1. %10
+    es'4 b8 c g as b4 es, r
+    R1.*3
+    f'16\p f, f' f, f' f, f' f, f' f, f' f, es' f, es' f, es' f, es' f, es' f, es' f, %15
+    d' f, d' f, d' f, d' f, d' f, d' f, c' f, c' f, c' f, c' f, c' f, c' f,
+    b f b f b f b f b f b f a f a f b f b f c' f, c' f,
+    d' f, d' f, es' f, es' f, f' f, f' f, d'8 b c d es f
+    g f es d c b a g f es d c
+    b r es r f r b'4\f f8 g d es %20
+    f4 b, r8 b a16 b c d es8 c, a f''
+    d4 b, r8 c' b16 c d e fis8 d, c c'
+    b4 g, r g'' d8 es b c
+    d4 g, r r2 r4
+    d'4\p a8 b fis g a4 d, r %25
+    r2 r4 d'\f a8 b fis g
+    a4 d, r d'\p a8 b fis g
+    \time 3/4 a4 d, r
+    \time 6/4 R1.
+    g'4\f d8 es b c d4 g, r8 b %30
+    a16 b c d es8 c, a f'' d4 b, r
+    r2 r4 b'' f8 g d es
+    f4 b, r r2 r4
+    b'\p f8 g d es f4 b, r
+    r2 r4 es\f b8 c g as %35
+    b4 es, r r2 r4
+    r2 r4 g'\p d8 es h c
+    d4 g, r r2 r4
+    R1.
+    es'4\p b8 c g as b4 es, r8 es' %40
+    es16 es, es' es, es' es, es' es, es' es, es' es, des' es, des' es, des' es, des' es, des' es, des' es,
+    c' es, c' es, c' es, c' es, c' es, c' es, b' es, b' es, b' es, b' es, b' es, b' es,
+    as es as es as es as es as es as es g8 g g g g g
+    as as b b c c as as b b b, b
+    es'4\f b8 c g as b4 es, r8 es' %45
+    d16 es f g as8 f, d b'' g4 g,, r
+    R1.
+    b''16 b, b' b, b' b, b' b, b' b, b' b, as' b, as' b, as' b, as' b, as' b, as' b,
+    g' b, g' b, g' b, g' b, g' b, g' b, f' b, f' b, f' b, f' b, f' b, f' b,
+    es b es b es b es b es b es b d4 d, r
+    r2 r4 es' b8 c g as
+    b4 es, r8 es' d16 es f g as8 f, d b''
+    g4 g,, r16 b' c d es es, es' es, es' es, es' es, es' es, es' es,
+    des' es, des' es, des' es, des' es, des' es, des' es, c' es, c' es, c' es, c' es, c' es, c' es,
+    b' es, b' es, b' es, b' es, b' es, b' es, as es as es as es as es as es as es
+    g8 b es c, b d' es16 b c d es b c d es b c d
+    es b c d es b c d es g, as b es,4 r r\fermata \bar "|."
+  }
+}

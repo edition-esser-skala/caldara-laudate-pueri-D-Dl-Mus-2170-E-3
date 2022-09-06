@@ -423,3 +423,115 @@ UtcollocetBassFigures = \figuremode {
   <7 _+> <6 4> <5 \t> <\t _+>
   <_!>\breve %32 finis
 }
+
+QuihabitareOrgano = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 6/4 \tempoQuihabitare
+      \set Staff.timeSignatureFraction = 3/2
+      \override Staff.TimeSignature.style = #'single-digit
+    \mvTr es2\fE-\solo r4 es8 d es f g es
+    f es d4 b es8 d es f g es
+    d4 d d d d d
+    es es es d d d
+    g g g b g d %5
+    es f g f8 es d c d b
+    es as b4 b, es2 r4
+    es2 r4 es2\p r4
+    es2 r4 es f g
+    as as g f2. %10
+    es2 r4 es2 es4
+    d g8 f es d c b a2
+    b8 a g2 a8 g f2
+    g8 f es2 f r4
+    R1.*5 %19
+    r2 r4 b'2\f r4 %20
+    b8 a b c d b f4 g a
+    b b a g d fis
+    g2 r4 g2\p r4
+    g2 r4 c,2 r4
+    d2 r4 d2 r4 %25
+    g f es d2.~
+    d1.~
+    \time 3/4 d2.~
+    \time 6/4 d4. es8 d c b a g c d4
+    g,2 r4 g8\f f g a b g %30
+    f4 g a b2 r4
+    b2\p r4 b2 r4
+    b2 r4 b2 r4
+    b2 r4 b2 r4
+    es2 r4 es2 r4 %35
+    es2 r4 as2 g4
+    f2. g2 r4
+    g2 r4 as2 r4
+    as2 r4 b2 r4
+    g2 r4 g2 r4 %40
+    R1.*4
+    es2\f r4 es8 d es f g es %45
+    f es d4 b es8 d es\pE f g es
+    f es f4 g as as, as'
+    g r r d r r
+    es r r b r r
+    b r r b r b %50
+    es b' b, es2\f r4
+    es8 d es f g es f es d4 b
+    es8 d es f g f es4 r r
+    es r r as r r
+    g r r as r r %55
+    es c'8 as b b, es2 r4
+    es2 r4 es2 r4\fermata \bar "|." %57 finis
+  }
+}
+
+QuihabitareBassFigures = \figuremode {
+  r1.
+  \bo <[6 _-]>2 \once \bassFigureExtendersOn <6 _->4 r2.
+  <6> \bc <[6 5-]>
+  <3> <6>
+  <6> r4 q q %5
+  r \bo <[6] _-> \bc <[6]> <_-> <6>2
+  r4 \bo <[4]> \bc <[3]> r2.
+  r1.
+  r2. r2 <[6 5-]>4
+  r2 <[6]>4 <4> <_->2 %10
+  r1.
+  <6>1 <5>4 <6>
+  r <5> <6> q <[7]>2
+  r4 <5> <6> r2.
+  r1.*5 %19
+  r1. %20
+  r2. r2 \bo <[6]>4
+  r2 \bc <[6\\]> <_+>4 <[6 5]>
+  r1.
+  r
+  <_+>2. q %25
+  r2 <6>4 <_+>2.
+  r1.
+  r2.
+  r <[6]>2 <_+>4
+  r1. %30
+  r2 <[6 5]>4 r2.
+  r1.
+  r
+  r
+  r %35
+  r2. r2 <6>4
+  <_->2. <_!>
+  <\t> <5>
+  <6>1.
+  <6>2. q %40
+  r1.*4
+  r1. %45
+  \bo <[6 _-]>2 \once \bassFigureExtendersOn <6 _->4 r2.
+  <6- _->8 <6> <6 _->4 \bc <[6 5-]>1
+  <5!>2. <6 [5-]>
+  r1.
+  <6 4>2. <5 3> %50
+  r1.
+  r2. \bo <[6 _-]>2 \once \bassFigureExtendersOn <6 _->4
+  r1.
+  <7->
+  \bc <[6 \l]> %55
+  r
+  r %57 finsi
+}

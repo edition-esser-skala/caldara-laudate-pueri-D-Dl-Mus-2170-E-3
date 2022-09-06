@@ -257,69 +257,106 @@
   %     \midi { \tempo 2 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \section "5" "Ut collocet eum"
+  %   \addTocEntry
+  %   \paper {
+  %     top-system-spacing.basic-distance = #10
+  %     top-system-spacing.minimum-distance = #10
+  %     top-markup-spacing.basic-distance = #0
+  %     top-markup-spacing.minimum-distance = #0
+  %     markup-system-spacing.basic-distance = #10
+  %     markup-system-spacing.minimum-distance = #10
+  %     systems-per-page = #2
+  %   }
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \UtcollocetViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \UtcollocetViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \UtcollocetSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \UtcollocetSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \UtcollocetAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \UtcollocetAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \UtcollocetTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \UtcollocetTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \UtcollocetBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \UtcollocetBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \UtcollocetOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \UtcollocetBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 1 = 60 }
+  %   }
+  % }
   \bookpart {
-    \section "5" "Ut collocet eum"
+    \section "6" "Qui habitare facit"
     \addTocEntry
     \paper {
-      top-system-spacing.basic-distance = #10
-      top-system-spacing.minimum-distance = #10
-      top-markup-spacing.basic-distance = #0
-      top-markup-spacing.minimum-distance = #0
-      markup-system-spacing.basic-distance = #10
-      markup-system-spacing.minimum-distance = #10
-      systems-per-page = #2
+      system-system-spacing.basic-distance = #20
+      system-system-spacing.minimum-distance = #20
+      systems-per-page = #4
+      page-count = #5
     }
     \score {
       <<
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "vl"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \UtcollocetViolinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \UtcollocetViolinoII
-            }
-          >>
+        \new StaffGroup \with { \smallGroupDistance } <<
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
+            \QuihabitareViolinoIeII
+          }
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \UtcollocetSoprano }
+            \set Staff.instrumentName = \markup \center-column { "S" "solo" }
+            \new Voice = "SopranoSolo" { \dynamicUp \QuihabitareSopranoSolo }
           }
-          \new Lyrics \lyricsto Soprano \UtcollocetSopranoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \UtcollocetAlto }
-          }
-          \new Lyrics \lyricsto Alto \UtcollocetAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \UtcollocetTenore }
-          }
-          \new Lyrics \lyricsto Tenore \UtcollocetTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \UtcollocetBasso }
-          }
-          \new Lyrics \lyricsto Basso \UtcollocetBassoLyrics
+          \new Lyrics \lyricsto SopranoSolo \QuihabitareSopranoSoloLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \UtcollocetOrgano
+            \QuihabitareOrgano
           }
         >>
-        \new FiguredBass { \UtcollocetBassFigures }
+        \new FiguredBass { \QuihabitareBassFigures }
       >>
       \layout { }
-      \midi { \tempo 1 = 60 }
+      \midi { \tempo 4 = 140 }
     }
   }
 }
