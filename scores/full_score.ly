@@ -322,41 +322,116 @@
   %     \midi { \tempo 1 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \section "6" "Qui habitare facit"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #20
+  %     system-system-spacing.minimum-distance = #20
+  %     systems-per-page = #4
+  %     page-count = #5
+  %   }
+  %   \score {
+  %     <<
+  %       \new StaffGroup \with { \smallGroupDistance } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
+  %           \QuihabitareViolinoIeII
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "S" "solo" }
+  %           \new Voice = "SopranoSolo" { \dynamicUp \QuihabitareSopranoSolo }
+  %         }
+  %         \new Lyrics \lyricsto SopranoSolo \QuihabitareSopranoSoloLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \QuihabitareOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \QuihabitareBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 140 }
+  %   }
+  % }
   \bookpart {
-    \section "6" "Qui habitare facit"
+    \section "7" "Amen"
     \addTocEntry
     \paper {
-      system-system-spacing.basic-distance = #20
-      system-system-spacing.minimum-distance = #20
-      systems-per-page = #4
-      page-count = #5
+      top-system-spacing.basic-distance = #10
+      top-system-spacing.minimum-distance = #10
+      top-markup-spacing.basic-distance = #0
+      top-markup-spacing.minimum-distance = #0
+      markup-system-spacing.basic-distance = #10
+      markup-system-spacing.minimum-distance = #10
+      system-system-spacing.basic-distance = #17
+      system-system-spacing.minimum-distance = #17
+      systems-per-page = #2
     }
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
-          \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
-            \QuihabitareViolinoIeII
-          }
+        \new StaffGroup <<
+          \new GrandStaff \with { \setGroupDistance #11 #12 } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \AmenViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \AmenViolinoII
+            }
+          >>
         >>
-        \new ChoirStaff <<
+        \new ChoirStaff \with { \setGroupDistance #12 #12 } <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "S" "solo" }
-            \new Voice = "SopranoSolo" { \dynamicUp \QuihabitareSopranoSolo }
+            \new Voice = "SopranoSolo" { \dynamicUp \AmenSopranoSolo }
           }
-          \new Lyrics \lyricsto SopranoSolo \QuihabitareSopranoSoloLyrics
+          \new Lyrics \lyricsto SopranoSolo \AmenSopranoSoloLyrics
+        >>
+        \new ChoirStaff \with { \setGroupDistance #12 #12 } <<
+          \set ChoirStaff.instrumentName = \markup \rotate #90 "Coro"
+          \new Staff {
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \AmenSoprano }
+          }
+          \new Lyrics \lyricsto Soprano \AmenSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \AmenAlto }
+          }
+          \new Lyrics \lyricsto Alto \AmenAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \AmenTenore }
+          }
+          \new Lyrics \lyricsto Tenore \AmenTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \AmenBasso }
+          }
+          \new Lyrics \lyricsto Basso \AmenBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \QuihabitareOrgano
+            \AmenOrgano
           }
         >>
-        \new FiguredBass { \QuihabitareBassFigures }
+        \new FiguredBass { \AmenBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 140 }
+      \midi { \tempo 4 = 120 }
     }
   }
 }

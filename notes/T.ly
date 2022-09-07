@@ -224,3 +224,80 @@ UtcollocetTenoreLyrics = \lyricmode {
   su -- _ _ _
   i. %32 finis
 }
+
+AmenTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAmen
+    R1*5 %5
+    c2\fE h?8.[ c16] d4~
+    d c~ c8.[ d16 b8. c16]
+    a2 g8. g16[ a8. h?16]
+    c4 b as8.[ g16 as8. b16]
+    g4 c2 h4 %10
+    c2 g8.[ a16 h8. g16]
+    c2 d8.[ c16 d8. es16]
+    c8.[ b16 a8. c16] b8.[ a16] g4
+    R1
+    r8 r16 f[ g8. a16] b4 as %15
+    g8.[ g16 as8. b16] c4 d
+    es8.[ d16 es8. f16] d2
+    c r
+    R1*4 %22
+    r8 r16 es,[ g8. as?16] b8.[ c16] d4
+    c2. b4
+    b2 r %25
+    R1*2
+    d4 d r2
+    R1*2 %30
+    d4 d r2
+    R1
+    r2 b
+    a8.[ b16] c4 d2
+    es4 d d2 %35
+    R1*4
+    r8 r16 c a!4 r8 r16 d b4 %40
+    r8 r16 es c4 r8 r16 f d4
+    r8 r16 g es4 es r
+    R1*5 %47
+    es2 d
+    \tuplet 3/2 4 { es8[ f es] d[ es d] } c8.[ d16 es8. f16]
+    d2 c\fermata \bar "|." %50 finis
+  }
+}
+
+AmenTenoreLyrics = \lyricmode {
+  A -- _ _ %6
+  _
+  _ men, a --
+  _ _ _
+  _ _ _ %10
+  men, a --
+  _ _
+  _ _ men,
+
+  a -- _ _ %15
+  _ _ _
+  _ _
+  men,
+
+  a -- _ _ %23
+  _ _
+  men, %25
+
+  a -- men, %28
+
+  a -- men, %31
+
+  a --
+  _ _ _
+  _ _ men, %35
+
+  a -- _ _ _ %40
+  _ _ _ _
+  _ _ men,
+
+  a -- _ %48
+  _ _ _
+  _ men. %50 finis
+}

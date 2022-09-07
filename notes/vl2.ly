@@ -171,3 +171,59 @@ UtcollocetViolinoII = {
     g\breve\fermata \bar "|." %32 finis
   }
 }
+
+AmenViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoAmen
+    R1*2-\critnote
+    r2 g'\fE
+    es8.[ f16] g2 f4~
+    f8.[ g16 es8. f16] d2 %5
+    c8.[ d16 es8. f16] g4 f
+    es8.[ d16 es8. f16] d4 g~
+    g fis g g~
+    g8.[ f16 es8. d16] c4 d
+    h g8.-\critnote g'16 f8.[ es16 d8. f16] %10
+    es8.[ f16 g8. as16] g2~
+    g8.[ f16 g8. a16] fis4 g
+    es d d2
+    r r8 r16 c[ d8. es16]
+    f4 es d8.[ d16 es8. f16] %15
+    g4 f es8.[ es16 f8. g16]
+    as2. g4
+    g c2\p h4
+    c8 r c r as r b r
+    es, r es' r f, r d' r %20
+    es, r c' r d, r b' r
+    g r c r as r b r
+    es8._[\f es,16 es8. es'16] d8. es16 f4~
+    f es2 d4
+    es2 r8 r16 es,[\p f8. g16] %25
+    as8 r g r f r fis r
+    g4 r g r
+    g\f r g r
+    \tuplet 3/2 4 { g8[\p a h] h c d } d4 r
+    g, r g r %30
+    g\f r g r
+    c,8\p r c' r d, r b' r
+    c, r d r g'8.[\f g,16 g8. g16]
+    a8. b16 \tuplet 3/2 4 { c8 b a } d4 g~
+    g fis g8 r g,\p r %35
+    g r fis r g r g r
+    a r a r b r b r
+    h r h r c r c r
+    f, r f r g r g, r
+    r8 r16 c'\f c4 r8 r16 d d4 %40
+    r8 r16 es es4 r8 r16 f f4
+    r8 r16 b, \tuplet 3/2 4 { c8 b c } c,4 r8 r16 es'\p
+    f,8 r d' r es, r c' r
+    d, r h' r c, r f r
+    g,4 r g r %45
+    d'8 r es r f r f r
+    es r as r f r g r
+    c8.[\f c,16 c8. c'16] h8.[ h,16 h8. h'16]
+    c8 r b r as8. b16 c4~
+    c h c2\fermata \bar "|." %50 finis
+  }
+}

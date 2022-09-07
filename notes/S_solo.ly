@@ -329,3 +329,78 @@ QuihabitareSopranoSoloLyrics = \lyricmode {
   _ _ _ _ %50
   _ _ rum. %51 finis
 }
+
+AmenSopranoSolo = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAmen
+    R1*17 %17
+    c'4\pE g8. c16 d8.[ es16 f8. g16]
+    \tuplet 3/2 4 { es8[ d es] } c8. es16 \tuplet 3/2 4 { f8[ es f] d[ es f] }
+    \tuplet 3/2 4 { g[ f g] es[ f g] as[ g as] d,[ es f] } %20
+    \tuplet 3/2 4 { g[ f g] c,[ d es] f[ es f] b,[ c d] }
+    es8. b16 es8.[ f16] f2\trill
+    es r
+    R1
+    r8 r16 b[ c8. d16] \tuplet 3/2 4 { es8[ f es] d[ es d] } %25
+    c8.[ c16 d8. es16] \tuplet 3/2 4 { f8[ g f] es[ f es] }
+    d4 g, \tuplet 3/2 4 { g8[ a h] h[ c d] }
+    d2 \tuplet 3/2 4 { h8[ c d] d[ es f] }
+    f2 \tuplet 3/2 4 { d8[ es f] f[ g as] }
+    \tuplet 3/2 4 { h,[ c d] d[ es f] g,[ a h] h[ c d] } %30
+    g,2 g8.[ f'16 es8. d16]
+    \tuplet 3/2 4 { es8[ d es] c[ d es] d[ e? fis] g[ f? es?] }
+    \tuplet 3/2 4 { d[ c b] } a4 g r
+    R1
+    r2 d'4 g,8. b16 %35
+    a8.[ b16 c8. d16] \tuplet 3/2 4 { b8[ a b] } g8. b16
+    c8.[ d16 es8. f16] \tuplet 3/2 4 { d8[ c d] } b8. c16
+    d8.[ es16 f8. g16] \tuplet 3/2 4 { es8[ d es] } c8. es16
+    \tuplet 3/2 4 { d8[ es d] c[ d c] } h8.[ a16] g8. g16
+    \tuplet 3/2 4 { c8[ h c] } r r16 a \tuplet 3/2 4 { d8[ c d] } r r16 b? %40
+    \tuplet 3/2 4 { es8[ d es] } r r16 c \tuplet 3/2 4 { f8[ es f] } r r16 d
+    g4 g, r8 r16 g'[ f8. es16]
+    \tuplet 3/2 4 { f8[ es f] d[ es f] es[ d es] c[ d es] }
+    \tuplet 3/2 4 { d[ c d] h[ c d] c[ h c] a[ h c] }
+    \tuplet 3/2 4 { h[ a g] c[ h a] d[ c h] es[ d c] } %45
+    \tuplet 3/2 4 { f[ es d] g[ f es] as[ g f] f[ g as] }
+    \tuplet 3/2 4 { g[ f g] c,[ d es] f[ g es] } d4
+    c r r2
+    R1
+    R\fermata \bar "|." %50 finis
+  }
+}
+
+AmenSopranoSoloLyrics = \lyricmode {
+  A -- men, a -- _ %18
+  _ men, a -- _ _
+  _ _ _ _ %20
+  _ _ _ _
+  _ men, a -- _
+  men,
+
+  a -- _ _ %25
+  _ _ _
+  _ men, a -- _
+  _ _ _
+  _ _ _
+  _ _ _ _ %30
+  men, a --
+  _ _ _ _
+  _ _ men,
+
+  a -- men, a -- %35
+  _ _ men, a --
+  _ _ men, a --
+  _ _ men, a --
+  _ _ _ men, a --
+  _ _ _ _ %40
+  _ _ _ _
+  _ men, a --
+  _ _ _ _
+  _ _ _ _
+  _ _ _ _ %45
+  _ _ _ _
+  _ _ _ _
+  men. %48 finis
+}

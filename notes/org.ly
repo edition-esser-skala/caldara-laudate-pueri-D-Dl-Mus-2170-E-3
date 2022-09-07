@@ -533,5 +533,95 @@ QuihabitareBassFigures = \figuremode {
   <7->
   \bc <[6 \l]> %55
   r
-  r %57 finsi
+  r %57 finis
+}
+
+AmenOrgano = {
+  \relative c {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoAmen
+    \mvTr c''2\fE-\tutti h?8. c16 d4~
+    d c~ c8.[ d16 b8. c16]
+    << {
+      a2 g8.[^\critnote g16 a8. h16]
+      c4 b as8.[ g16 as8. b16]
+      g4 c2 h4 %5
+    } \\ {
+      s2 g
+      es8. f16 g2 f4~
+      f8.[ g16 es8. f16] d2 %5
+    } >>
+    \clef "treble_8" c h?8. c16 d4~
+    d c~ c8.[ d16 b8. c16]
+    a2 \clef bass g
+    es8. f16 g2 f4~
+    f8.[ g16 es8. f16] d2 %10
+    c8.[ d16 es8. f16] g4 f
+    es8.[ d16 es8. f16] d4 g~
+    g fis g2
+    c,8.[ c16 d8. es16] f4 es
+    d8.[ d16 es8. f16] g4 f %15
+    es8.[ es16 f8. g16] as2~
+    as8.[ b16 g8. as16] f4 g
+    c,2 r
+    R1*4 %22
+    \mvTr es8.[\fE-\tutti es16 g8. as16] b2
+    as8. b16 c4 as b
+    es,2 r %25
+    R1*2
+    g4\fE g, r2
+    R1*2 %30
+    g'4\fE g, r2
+    R1
+    r2 g'\fE
+    fis8. g16 a2 g4
+    c, d g, r %35
+    R1*4
+    r8 r16 \mvTr c16\fE-\tutti f4 r8 r16 d g4 %40
+    r8 r16 es as4 r8 r16 f b4
+    r8 r16 g c4 c, r
+    R1*5 %47
+    c8.[\fE d16 es8. f16] g2
+    es8. f16 g4 as8. g16 \tuplet 3/2 4 { f8 es d }
+    g4 g, c2\fermata \bar "|." %50 finis
+  }
+}
+
+AmenBassFigures = \figuremode {
+  r1
+  r
+  r
+  r
+  r %5
+  r2 <6>4 <[6!]>
+  <4 2> <6 3> <4+> <6>
+  <7> <6\\> \bo <[_-]> \bc <[_!]>
+  <6> \bo <[6 _-]>8. \bc <[5 \t]>16 <4 2->4 <6 \t>
+  <4!> <6> <7> <6!> %10
+  r \bo <[6]>8. \bc <[_-]>16 <5 _!>4 <\t \t>
+  <7> <6>8. \bo <[_!]>16 <7 _+>4 \bc <[_-]>
+  <2> <6>2.
+  r4 <[6]> <5 3> <\t \t>
+  <6> q2 <5 _->4 %15
+  r <_-> <5 3>2
+  r4 <\t \t> <[6 5] _->4 <_!>
+  r1*5 %22
+  r4 <6>2.
+  <6>2 <[6 5]>
+  r1*3 %27
+  <_!>1
+  r1*2 %30
+  <_!>1
+  r
+  r
+  <6>4 <6\\> \bo <[5 2]> \bc <[\t \t]>
+  <6 5> <_+>2. %35
+  r1*4
+  r4 <_!>2. %40
+  r2 r8. <[_-]>16 r4
+  r1
+  r1*5 %47
+  r2 <_!>
+  <[6]>4 <_-> <6> <_->
+  \bo <[4]>4 \bc <[_!]>2. %50 finis
 }

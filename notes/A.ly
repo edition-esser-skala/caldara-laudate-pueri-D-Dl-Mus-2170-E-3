@@ -231,3 +231,84 @@ UtcollocetAltoLyrics = \lyricmode {
   su -- _ _
   i. %32 finis
 }
+
+AmenAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAmen
+    R1*2
+    r2 g'\fE
+    es8.[ f16] g2 f4~
+    f8.[ g16 es8. f16] d2 %5
+    c8. d16[ es8. f16] g4 f
+    es8.[ d16 es8. f16] d4 g~
+    g fis g g~
+    g8.[ f16 es8. d16] c4 d
+    h g8.^\critnote g'16 f8.[ es16 d8. f16] %10
+    es8.[ f16 g8. as16] g2~
+    g8.[ f16 g8. a16] fis4 g
+    es d d2
+    r r8 r16 c[ d8. es16]
+    f4 es d8.[ d16 es8. f16] %15
+    g4 f es8.[ es16 f8. g16]
+    as2. g4
+    g2 r
+    R1*4 %22
+    es2 d8.[ es16] f4~
+    f es2 d4
+    es2 r %25
+    R1*2
+    g4 g r2
+    R1*2 %30
+    g4 g r2
+    R1
+    r2 g
+    a4^\critnote fis \once \tieDashed g2~
+    g4 fis g2 %35
+    R1*4
+    r8 r16 es c4 r8 r16 f d4^\critnote %40
+    r8 r16 g es4 r8 r16 as f4
+    r8 r16 b g4 g r
+    R1*6 %48
+    g2 f8.[ g16] as4
+    g2 g\fermata \bar "|." %50 finis
+  }
+}
+
+AmenAltoLyrics = \lyricmode {
+  A -- %3
+  _ _ _
+  _ %5
+  men, a -- _ _
+  _ _ _
+  _ men, a --
+  _ _
+  _ men, a -- _ %10
+  _ _
+  _ _
+  _ _ men,
+  a --
+  _ _ _ %15
+  _ _ _
+  _ _
+  men,
+
+  a -- _ _ %23
+  _ _
+  men, %25
+
+  a -- men, %28
+
+  a -- men, %31
+
+  a --
+  _ _ _
+  _ men, %35
+
+  a -- _ _ _ %40
+  _ _ _ _
+  _ _ men,
+
+  a -- _ _ %49
+  _ men. %50 finis
+}

@@ -294,3 +294,59 @@ QuihabitareViolinoIeII = {
     es b c d es b c d es g, as b es,4 r r\fermata \bar "|."
   }
 }
+
+AmenViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoAmen
+    \mvTr c'2\fE-\critnote h?8. c16 d4~
+    d \once \tieDashed c~ c8.[ d16 b8. c16]
+    a2 g8. g16[ a8. h16]
+    c4 b as8.[ g16 as8. b16]
+    g4 c2 h4 %5
+    es2 d8.[ c16 h?8. a16]
+    g4 a fis d8.-\critnote d'16
+    c8.[ b!16 a8. c16] b8.[ a16] g4
+    R1*2 %10
+    c2 h8.[ c16] d4~
+    d c~ c8.[ d16 b8. c16]
+    a2 g8. g16[ a8. b16]
+    c4 b a8.[ a16 b8. c16]
+    d4 c b8.[ b16 c8. d16] %15
+    es2~ es8.[ f16 d8. es16]
+    c2. h4
+    c es\p d2
+    c8 r es r c r d r
+    g, r g' r as, r f' r %20
+    g, r es' r f, r d' r
+    es, r es' r c r d r
+    g8.[\f g,16 g8. g'16] f4. g8
+    as4 \tuplet 3/2 4 { g8 f es } f2
+    es r8 r16 g,[\p as?8. b16] %25
+    c8 r b r as? r c r
+    h4 r h r
+    h\f r h r
+    \tuplet 3/2 4 { h8[\p c d] d es f } f4 r
+    h, r h r %30
+    h\f r h r
+    es,8\p r es' r fis, r d' r
+    e,? r fis r r8 r16 g[\f b8. c16]
+    d4 c b8.[ a16 b8. c16]
+    a2 g8 r b\p r %35
+    c r a r b r es r
+    c r c r d r d r
+    d r d r es r c r
+    as r as r g r g, r
+    r8 r16 es''\fE \tuplet 3/2 4 { f8 es f } r r16 f \tuplet 3/2 4 { g8 f g } %40
+    r r16 g \tuplet 3/2 4 { as8 g as } r r16 as \tuplet 3/2 4 { b8 as b }
+    r r16 g \tuplet 3/2 4 { es8 d es } es,4 r8 r16 g'\p
+    as,8 r f' r g, r es' r
+    f, r d' r es, r a? r
+    g,4 r g r %45
+    d'8 r es r f r f r
+    es r c' r c r h r
+    es8.[\f es,16 es8. es'16] d8.[ d,16 d8. d'16]
+    es8 r d r c8.[ d16 es8. f16]
+    d2 c\fermata \bar "|." %50 finis
+  }
+}

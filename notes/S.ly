@@ -229,3 +229,87 @@ UtcollocetSopranoLyrics = \lyricmode {
   li su --
   i. %32 finis
 }
+
+AmenSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAmen
+    c'2\fE h?8.[ c16] d4~
+    d \once \tieDashed c~ c8.[ d16 b8. c16]
+    a2 g8. g16[ a8. h16]
+    c4 b as8.[ g16 as8. b16]
+    g4 c2 h4 %5
+    es2 d8.[ c16 h?8. a16]
+    g4 a fis d8.^\critnote d'16
+    c8.[ b!16 a8. c16] b8.[ a16] g4
+    R1*2 %10
+    c2 h8.[ c16] d4~
+    d c~ c8.[ d16 b8. c16]
+    a2 g8. g16[ a8. b16]
+    c4 b a8.[ a16 b8. c16]
+    d4 c b8.[ b16 c8. d16] %15
+    es2~ es8.[ f16 d8. es16]
+    c2. h4
+    c2 r
+    R1*4 %22
+    r2 r4 r8 r16 b
+    c8.[ d16 es8. g,16] f2
+    g r %25
+    R1*2
+    h4 h r2
+    R1*2 %30
+    h4 h r2
+    R1
+    r4 d2 b8.[ c16]
+    d4 c b8.[ a16 b8. c16]
+    a2 g %35
+    R1*4
+    r8 r16 g a!4 r8 r16 a b4 %40
+    r8 r16 b c4 r8 r16 c d4
+    r8 r16 d c4 c r
+    R1*5 %47
+    c2 h8.[ c16] d4
+    c b as8.[ b16] \once \tieDashed c4~
+    c h c2\fermata \bar "|." %50 finis
+  }
+}
+
+AmenSopranoLyrics = \lyricmode {
+  A -- _ _
+  _
+  _ men, a --
+  _ _ _
+  _ _ _ %5
+  _ _
+  _ _ _ men, a --
+  _ _ men,
+
+  a -- _ _ %11
+  _
+  _ men, a --
+  _ _ _
+  _ _ _ %15
+  _
+  _ _
+  men,
+
+  a -- %23
+  _ _
+  men, %25
+
+  a -- men, %28
+
+  a -- men, %31
+
+  a -- _
+  _ _ _
+  _ men, %35
+
+  a -- _ _ _ %40
+  _ _ _ _
+  _ _ men,
+
+  a -- _ _ %48
+  _ _ _ _
+  _ men. %50 finis
+}

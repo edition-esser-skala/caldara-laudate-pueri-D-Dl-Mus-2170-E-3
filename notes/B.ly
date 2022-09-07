@@ -225,3 +225,76 @@ UtcollocetBassoLyrics = \lyricmode {
   su --
   i. %32 finis
 }
+
+AmenBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAmen
+    R1*7 %7
+    r2 g'\fE
+    es8.[ f16] g2 f4~
+    f8.[ g16 es8. f16] d2 %10
+    c8. d16[ es8. f16] g4 f
+    es8.[ d16 es8. f16] d4 g~
+    g fis g2
+    r8 r16 c,[ d8. es16] f4 es
+    d8.[ d16 es8. f16] g4 f %15
+    es8.[ es16 f8. g16] as2~
+    as8.[ b16 g8. as16] f4 g
+    c,2 r
+    R1*4 %22
+    r2 b'
+    as8.[ b16] c4 as b
+    es,2 r %25
+    R1*2
+    g4 g, r2
+    R1*2 %30
+    g'4 g, r2
+    R1
+    r2 g'
+    fis8.[ g16] a2 g4
+    c, d g,2 %35
+    R1*4
+    r8 r16 c16 f4 r8 r16 d g4 %40
+    r8 r16 es as4 r8 r16 f b4
+    r8 r16 g c4 c, r
+    R1*5 %47
+    c8.[ d16 es8. f16] g2
+    es8.[ f16] g4 as8.[ g16] \tuplet 3/2 4 { f8[ es d] }
+    g4 g, c2\fermata \bar "|." %50 finis
+  }
+}
+
+AmenBassoLyrics = \lyricmode {
+  A -- %8
+  _ _ _
+  _ %10
+  men, a -- _ _
+  _ _ _
+  _ men,
+  a -- _ _
+  _ _ _ %15
+  _ _
+  _ _
+  men,
+
+  a -- %23
+  _ _ _ _
+  men, %25
+
+  a -- men, %28
+
+  a -- men, %31
+
+  a --
+  _ _ _
+  _ _ men, %35
+
+  a -- _ _ _ %40
+  _ _ _ _
+  _ _ men,
+
+  a -- _ %48
+  _ _ _ _
+  _ _ men. %50 finis
+}
