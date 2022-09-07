@@ -44,7 +44,7 @@ AsolisTenore = {
     \clef "treble_8"
     \key g \minor \time 3/2 \autoBeamOff \tempoAsolis
     R1.
-    \mvTr d2\fE^\tutti d d
+    d2\fE d d
     d d r
     d2. d4 d c
     d1.~ %5
@@ -165,7 +165,7 @@ UtcollocetTenore = {
     \key g \minor \time 4/2 \autoBeamOff \tempoUtcollocet
       \set Staff.timeSignatureFraction = 2/2
     R\breve*5 %5
-    \mvTr d1\fE^\tutti d2. d4
+    d1\fE d2. d4
     d1 es
     d c2 f
     b,4. b8 es1 d2

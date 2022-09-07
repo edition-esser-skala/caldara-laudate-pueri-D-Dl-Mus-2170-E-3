@@ -44,7 +44,7 @@ AsolisAlto = {
     \clef treble
     \key g \minor \time 3/2 \autoBeamOff \tempoAsolis
     R1.
-    \mvTr g'2\fE^\tutti g g
+    g'2\fE g g
     g fis r
     fis2. fis4 g fis
     g1 fis2 %5
@@ -164,7 +164,7 @@ UtcollocetAlto = {
     \clef treble
     \key g \minor \time 4/2 \autoBeamOff \tempoUtcollocet
       \set Staff.timeSignatureFraction = 2/2
-    r1 \mvTr g'\fE^\tutti
+    r1 g'\fE
     g2. g4 g1
     b a
     g2 c f,4. f8 b2~

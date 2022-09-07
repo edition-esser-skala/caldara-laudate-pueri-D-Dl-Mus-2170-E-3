@@ -44,7 +44,7 @@ AsolisSoprano = {
     \clef treble
     \key g \minor \time 3/2 \autoBeamOff \tempoAsolis
     R1.
-    \mvTr b'2\fE^\tutti b b
+    b'2\fE b b
     b a r
     a2. a4 g a
     b1 a2 %5
@@ -164,7 +164,7 @@ UtcollocetSoprano = {
     \clef treble
     \key g \minor \time 4/2 \autoBeamOff \tempoUtcollocet
       \set Staff.timeSignatureFraction = 2/2
-    \mvTr d'1\fE^\tutti d2. d4
+    d'1\fE d2. d4
     d1 es
     d c2 f
     b,4. b8 es1 d2

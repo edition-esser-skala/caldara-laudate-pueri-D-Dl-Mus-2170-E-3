@@ -44,7 +44,7 @@ AsolisBasso = {
     \clef bass
     \key g \minor \time 3/2 \autoBeamOff \tempoAsolis
     R1.
-    \mvTr g'2\fE^\tutti b g
+    g'2\fE b g
     d' d, r
     d2. c4 b a
     g2 b d %5
@@ -166,7 +166,7 @@ UtcollocetBasso = {
     \key g \minor \time 4/2 \autoBeamOff \tempoUtcollocet
       \set Staff.timeSignatureFraction = 2/2
     R\breve*5 %5
-    r1 \mvTr g'\fE^\tutti
+    r1 g'\fE
     g2. g4 g1
     b a
     g2 c f,4. f8 b2~
