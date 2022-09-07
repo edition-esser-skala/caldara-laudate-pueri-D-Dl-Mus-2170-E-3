@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "vl 2")
 \include "score_settings/one-staff.ly"
 
 \book {
@@ -12,8 +12,8 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \LaudateViolinoI
+          \set Staff.instrumentName = "Violino II"
+          \LaudateViolinoII
         }
       >>
     }
@@ -24,7 +24,7 @@
     \paper { systems-per-page = #5 }
     \score {
       <<
-        \new Staff { \AsolisViolinoI }
+        \new Staff { \AsolisViolinoII }
       >>
     }
   }
@@ -42,7 +42,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \QuisViolinoI }
+        \new Staff { \QuisViolinoII }
       >>
     }
   }
@@ -52,7 +52,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \UtcollocetViolinoI }
+        \new Staff { \UtcollocetViolinoII }
       >>
     }
   }
@@ -72,7 +72,7 @@
     \paper { page-count = #1 }
     \score {
       <<
-        \new Staff { \AmenViolinoI }
+        \new Staff { \AmenViolinoII }
       >>
     }
   }

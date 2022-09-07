@@ -176,7 +176,7 @@ AmenViolinoII = {
   \relative c' {
     \clef treble
     \key c \dorian \time 4/4 \tempoAmen
-    R1*2-\critnote
+    R1*2_\critnote
     r2 g'\fE
     es8.[ f16] g2 f4~
     f8.[ g16 es8. f16] d2 %5
